@@ -1,0 +1,316 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ==========================
+   RESET
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0f172a;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* ==========================
+   VARIABLES
+========================== */
+
+:root {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+
+  --green: #22c55e;
+  --red: #ef4444;
+  --yellow: #facc15;
+
+  --background: #0f172a;
+  --card: #1e293b;
+  --card-light: #334155;
+
+  --text: #ffffff;
+  --text-light: #cbd5e1;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --radius: 12px;
+
+  --shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.header,
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 8%;
+  background: #111827;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo h1,
+header h1 {
+  font-size: 30px;
+  color: var(--primary);
+}
+
+.navbar,
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar a,
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+header nav a:hover,
+.navbar .active {
+  color: var(--primary);
+}
+
+/* ==========================
+   SEARCH BOX
+========================== */
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #1f2937;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+
+  padding: 12px 16px;
+  width: 230px;
+}
+
+.search-box input::placeholder {
+  color: #9ca3af;
+}
+
+.search-box button {
+  border: none;
+  background: var(--primary);
+  color: white;
+
+  cursor: pointer;
+  padding: 12px 18px;
+
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: var(--primary-hover);
+}
+
+/* ==========================
+   MAIN
+========================== */
+
+.container,
+main {
+  width: 90%;
+  max-width: 1300px;
+  margin: 40px auto;
+}
+
+/* ==========================
+   TABLE
+========================== */
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+thead {
+  background: #111827;
+}
+
+th {
+  padding: 18px;
+  text-align: left;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+}
+
+td {
+  padding: 18px;
+  border-top: 1px solid var(--border);
+  color: var(--text-light);
+}
+
+tbody tr {
+  transition: 0.3s;
+}
+
+tbody tr:hover {
+  background: var(--card-light);
+}
+
+td img {
+  border-radius: 50%;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.favorite-btn,
+.remove-btn {
+  border: none;
+  cursor: pointer;
+
+  padding: 10px 16px;
+  border-radius: 8px;
+
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.favorite-btn {
+  background: var(--yellow);
+  font-size: 18px;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.08);
+}
+
+.remove-btn {
+  background: var(--red);
+  color: white;
+}
+
+.remove-btn:hover {
+  background: #dc2626;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1000px) {
+  .header,
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar,
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .search-box input {
+    width: 170px;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo h1,
+  header h1 {
+    font-size: 24px;
+  }
+
+  th,
+  td {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .favorite-btn,
+  .remove-btn {
+    padding: 8px 12px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .container,
+  main {
+    width: 95%;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar,
+  header nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo h1,
+  header h1 {
+    text-align: center;
+  }
+}
