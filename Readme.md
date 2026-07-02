@@ -1,6 +1,6 @@
 # 🚀 Crypto Tracker
 
-A simple and responsive **Cryptocurrency Tracker** built using **HTML, CSS, and JavaScript**. The application fetches real-time cryptocurrency market data from the CoinGecko API, allowing users to search, sort, and save their favorite cryptocurrencies using Local Storage.
+A simple and responsive **Cryptocurrency Tracker** built using **HTML, CSS, and JavaScript**. The application fetches real-time cryptocurrency market data from the CoinGecko API, allowing users to search and save their favorite cryptocurrencies using Local Storage.
 
 ---
 
@@ -46,7 +46,6 @@ crypto-tracker/
     ├── storage.js
     ├── ui.js
     ├── search.js
-    ├── sort.js
     └── utils.js
 ```
 
@@ -75,10 +74,9 @@ cd crypto-tracker
 1. Open the Home page.
 2. Browse the list of cryptocurrencies.
 3. Search for a specific cryptocurrency.
-4. Sort the table by price, volume, or market cap.
-5. Click the ⭐ button to add a cryptocurrency to your favorites.
-6. Open the **Liked Coins** page to view your saved cryptocurrencies.
-7. Remove a coin from favorites using the Remove button.
+4. Click the ⭐ button to add a cryptocurrency to your favorites.
+5. Open the **Liked Coins** page to view your saved cryptocurrencies.
+6. Remove a coin from favorites using the Remove button.
 
 ---
 
@@ -100,7 +98,6 @@ This project demonstrates:
 - Event Handling
 - Array Methods
 - Search Functionality
-- Sorting Algorithms
 - Local Storage
 - Responsive Web Design
 - Modular JavaScript Architecture
