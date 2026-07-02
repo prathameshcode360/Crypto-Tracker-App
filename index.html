@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <!-- ================= HEADER ================= -->
+    <!-- Header -->
     <header class="header">
       <div class="logo">
         <h1>Crypto Tracker</h1>
@@ -35,9 +35,9 @@
       </nav>
     </header>
 
-    <!-- ================= MAIN ================= -->
+    <!-- Main -->
     <main class="container">
-      <!-- Coins Table -->
+      <!-- Coin Table -->
       <section class="table-container">
         <table>
           <thead>
@@ -45,24 +45,9 @@
               <th>#</th>
               <th>Icon</th>
               <th>Name</th>
-              <th id="priceSort">
-                Price
-                <i class="fa-solid fa-arrow-up"></i>
-                <i class="fa-solid fa-arrow-down"></i>
-              </th>
-
-              <th id="volumeSort">
-                24h Volume
-                <i class="fa-solid fa-arrow-up"></i>
-                <i class="fa-solid fa-arrow-down"></i>
-              </th>
-
-              <th id="marketCapSort">
-                Market Cap
-                <i class="fa-solid fa-arrow-up"></i>
-                <i class="fa-solid fa-arrow-down"></i>
-              </th>
-
+              <th>Price</th>
+              <th>24h Volume</th>
+              <th>Market Cap</th>
               <th>Favorite</th>
             </tr>
           </thead>
@@ -71,6 +56,13 @@
             <!-- Coins will be rendered here using JavaScript -->
           </tbody>
         </table>
+      </section>
+
+      <!-- Pagination -->
+      <section class="pagination-container">
+        <div id="pagination" class="pagination">
+          <!-- Pagination buttons will be rendered here -->
+        </div>
       </section>
     </main>
 

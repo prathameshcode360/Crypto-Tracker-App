@@ -1,56 +1,16 @@
-/* =====================
-   LIKED PAGE
-===================== */
+/* Liked Coins Page */
 
 section h2 {
   text-align: center;
-  font-size: 34px;
-  margin-bottom: 30px;
-  color: #3b82f6;
-}
-
-table {
-  animation: fadeIn 0.5s ease;
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .remove-btn {
-  min-width: 100px;
-}
-
-.remove-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.35);
-}
-
-tbody tr td:first-child {
-  color: white;
-  font-weight: 600;
-}
-
-tbody tr td:nth-child(3) {
-  font-weight: 600;
-  color: white;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  min-width: 80px;
 }
 
 @media (max-width: 768px) {
-  section h2 {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 500px) {
   section h2 {
     font-size: 24px;
   }

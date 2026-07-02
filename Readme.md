@@ -8,10 +8,6 @@ A simple and responsive **Cryptocurrency Tracker** built using **HTML, CSS, and 
 
 - 📈 Fetch live cryptocurrency data from the CoinGecko API
 - 🔍 Search cryptocurrencies by name
-- ↕️ Sort coins by:
-  - Current Price
-  - 24h Trading Volume
-  - Market Capitalization
 - ⭐ Add cryptocurrencies to your favorites
 - 🗑️ Remove cryptocurrencies from favorites
 - 💾 Store favorite coins using Local Storage
@@ -61,7 +57,7 @@ crypto-tracker/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/crypto-tracker.git
+git clone https://github.com/prathameshcode360/Crypto-Tracker-App.git
 ```
 
 2. Navigate to the project folder
@@ -129,10 +125,4 @@ Displays all favorite cryptocurrencies saved by the user.
 
 GitHub: https://github.com/prathameshcode360
 
-LinkedIn: https://www.linkedin.com/in/prathameshmhatugade/
-
 ---
-
-## ⭐ If you like this project
-
-Give this repository a ⭐ on GitHub if you found it helpful.
